@@ -1,0 +1,46 @@
+(unit's unique class)
+Paladin
+Great Knight
+General
+Berserker
+Hero
+Bow Knight
+Adventurer
+Swordmaster
+Master of Arms
+Oni Chieftain
+Blacksmith
+Spear Master
+Basara
+Onmyoji
+Great Master/Priestess
+Falcon Knight
+Kinshi Knight
+Sniper
+Wyvern Lord
+Malig Knight
+Master Ninja
+Mechanist
+Merchant
+Sorcerer
+Dark Knight
+Strategist
+Butler/Maid
+Ballistician
+Witch
+Lodestar
+Vanguard
+Great Lord
+Grandmaster
+Pegasus Knight
+War Cleric
+Wyvern Master
+Dread Fighter
+Enchantress
+Bride/Groom
+Conjurer
+Trickster
+War Master
+Mythical Master
+Martial Monk
+Dark Flier
