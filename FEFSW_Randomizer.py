@@ -7,6 +7,7 @@ def main():
     seed = input("Seed:")
     random.seed(seed)
     base_dir = os.path.dirname(sys.executable)
+    #base_dir = os.path.dirname(__file__)
     name_list = []
     class_list = []
     with open(os.path.join(base_dir, "lists", "characters.txt")) as f:
@@ -41,6 +42,7 @@ def main():
     with open(path,"w") as f:
         
         newlist = random.sample(name_list, toGet)
+        parentsUsed = []
         for i in newlist:
             toPrint = i.strip()
             try:
@@ -48,12 +50,17 @@ def main():
                     temp_list = []
                     for x in g:
                         temp_list.append(x.strip())
-                    toPrint = random.choice(temp_list) + "!" + toPrint
+                    while True:
+                        parentChoice = random.choice(temp_list).strip()
+                        if parentChoice not in parentsUsed:
+                            toPrint = parentChoice + "!" + toPrint
+                            parentsUsed.append(parentChoice)
+                            break
             except FileNotFoundError or OSError:
                 pass
             if(mode.lower() == "y"):
                 toPrint = toPrint + ": " + random.choice(class_list)
-            f.write(toPrint)
+            f.write(toPrint + "\n")
     print("List printed at " + path)
     try:
         input("Press Enter to finish.")
